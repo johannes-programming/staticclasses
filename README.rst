@@ -30,6 +30,6 @@ Links
 Credits
 -------
 - Author: Johannes
-- Email: johannes-programming@posteo.org
+- Email: johannes-programming@mailfence.com
 
 Thank you for using staticclasses!

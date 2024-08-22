@@ -6,11 +6,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "staticclasses"
-version = "0.1.0"
+version = "0.1.1"
 description = "static class"
 readme = "README.rst"
 authors = [
-    { name = "Johannes", email = "johannes-programming@posteo.org" },
+    { name = "Johannes", email = "johannes-programming@mailfence.com" },
 ]
 classifiers = [
     "License :: OSI Approved :: MIT License",
