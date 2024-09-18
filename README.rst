@@ -5,7 +5,7 @@ staticclasses
 Overview
 --------
 
-static class
+Create static classes in python.
 
 Installation
 ------------
@@ -15,6 +15,20 @@ To install ``staticclasses``, you can use ``pip``. Open your terminal and run:
 .. code-block:: bash
 
     pip install staticclasses
+
+Implementation
+--------------
+
+.. code-block:: python
+
+    class staticmeta(type):
+        def __call__(cls, *args, **kwargs):
+            e = "Cannot instantiate static class %r!"
+            e %= cls.__name__
+            raise TypeError(e)
+
+
+    class staticclass(metaclass=staticmeta): ...
 
 License
 -------
