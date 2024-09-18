@@ -1,3 +1,8 @@
-class staticclass:
-    def __new__(cls):
-        raise NotImplementedError(cls.__new__)
+class staticmeta(type):
+    def __call__(cls, *args, **kwargs):
+        e = "Cannot instantiate static class %r!"
+        e %= cls.__name__
+        raise TypeError(e)
+
+
+class staticclass(metaclass=staticmeta): ...
