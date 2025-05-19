@@ -4,9 +4,9 @@ __all__ = ["staticmeta", "staticclass"]
 
 
 class StaticClassError(TypeError):
-    def __init__(self: Self, /, msg: str) -> None:
+    def __init__(self: Self, /, msg: Any) -> None:
         "This magic method initializes a new instance."
-        return super().__init__(msg)
+        return super().__init__(str(msg))
 
 
 class staticmeta(type):
