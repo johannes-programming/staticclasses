@@ -1,6 +1,3 @@
-def main(args=None):
-    print("Hello World!")
-    
-if __name__ == '__main__':
-    main() 
-
+class staticclass:
+    def __new__(cls):
+        raise NotImplementedError(cls.__new__)
