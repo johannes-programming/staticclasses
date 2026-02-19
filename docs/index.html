@@ -36,7 +36,7 @@
                         </dl>
                     </dd>
                     <dt id="testing">Testing</dt>
-                    <dd id="testingCorpus"></dd>
+                    <dd class="testingCorpus"></dd>
                     <dt id="license">License</dt>
                     <dd id="licenseCorpus"></dd>
                     <dt id="impressum">Impressum</dt>
@@ -45,13 +45,20 @@
             </dd>
         </dl>
     </body>
-    <script src="https://www.johannes-programming.online/script.js"></script>
-    <script>
-        setupLinksCorpus("staticclasses");
-        setupInstallCorpus("staticclasses");
-        setupTestingCorpus("staticclasses");
-        setupLicenseCorpus("staticclasses");
+    <script type="module">
+        import {
+            setupImpressumCorpus,
+            setupInstallCorpus,
+            setupLicenseCorpus,
+            setupLinksCorpus,
+            setupTestingCorpus,
+            addMetaAndLinkTags,
+        } from "https://www.johannes-programming.online/script.js";
         setupImpressumCorpus("staticclasses");
+        setupInstallCorpus("staticclasses");
+        setupLicenseCorpus("staticclasses");
+        setupLinksCorpus("staticclasses");
+        setupTestingCorpus("staticclasses");
         addMetaAndLinkTags();
     </script>
 </html>
